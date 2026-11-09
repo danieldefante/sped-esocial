@@ -735,8 +735,8 @@ trait TraitS1000
             $this->dom->addChild(
                 $infoCadastro,
                 "indOptRegEletron",
-                $cad->indoptregeletron,
-                true
+                isset($cad->indoptregeletron) ? $cad->indoptregeletron : null,
+                false //S-1.3: não preencher se iniValid >= 2026-02 (XSD de 2026-11-23 em diante)
             );
             $this->dom->addChild(
                 $infoCadastro,

@@ -68,7 +68,7 @@
                     "pattern": "^(S)$"
                 },
                 "indoptregeletron": {
-                    "required": true,
+                    "required": false,
                     "type": "integer",
                     "minimum": 0,
                     "maximum": 1
