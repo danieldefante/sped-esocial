@@ -1,0 +1,33 @@
+{
+ "event": "evtTabRubrica",
+ "xsd": "evtTabRubrica",
+ "config": {
+  "tpAmb": 2,
+  "verProc": "Meristes_1.0",
+  "eventoVersion": "S.1.3.0",
+  "serviceVersion": "1.5.0",
+  "empregador": {
+   "tpInsc": 1,
+   "nrInsc": "11222333"
+  },
+  "transmissor": {
+   "tpInsc": 2,
+   "nrInsc": "12345678909"
+  }
+ },
+ "std": {
+  "modo": "INC",
+  "codrubr": "PROLABORE",
+  "idetabrubr": "MERISTES",
+  "inivalid": "2027-01",
+  "dadosrubrica": {
+   "dscrubr": "Pró-labore do sócio",
+   "natrubr": 3508,
+   "tprubr": 1,
+   "codinccp": "11",
+   "codincirrf": "11",
+   "codincfgts": "00",
+   "codincpispasep": "00"
+  }
+ }
+}

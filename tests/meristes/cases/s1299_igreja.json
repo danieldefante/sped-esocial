@@ -1,0 +1,29 @@
+{
+ "event": "evtFechaEvPer",
+ "xsd": "evtFechaEvPer",
+ "config": {
+  "tpAmb": 2,
+  "verProc": "Meristes_1.0",
+  "eventoVersion": "S.1.3.0",
+  "serviceVersion": "1.5.0",
+  "empregador": {
+   "tpInsc": 1,
+   "nrInsc": "11222333"
+  },
+  "transmissor": {
+   "tpInsc": 2,
+   "nrInsc": "12345678909"
+  }
+ },
+ "std": {
+  "indapuracao": 1,
+  "perapur": "2027-01",
+  "infofech": {
+   "evtremun": "S",
+   "evtpgtos": "S",
+   "evtcontratavnp": "N",
+   "evtinfocomplper": "N",
+   "evtcomprod": "N"
+  }
+ }
+}

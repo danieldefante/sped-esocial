@@ -1,0 +1,70 @@
+{
+ "event": "evtRemun",
+ "xsd": "evtRemun",
+ "config": {
+  "tpAmb": 2,
+  "verProc": "Meristes_1.0",
+  "eventoVersion": "S.1.3.0",
+  "serviceVersion": "1.5.0",
+  "empregador": {
+   "tpInsc": 1,
+   "nrInsc": "11222333"
+  },
+  "transmissor": {
+   "tpInsc": 2,
+   "nrInsc": "12345678909"
+  }
+ },
+ "std": {
+  "indretif": 1,
+  "indapuracao": 1,
+  "perapur": "2027-01",
+  "cpftrab": "12345678909",
+  "infocomplem": {
+   "nmtrab": "Ministro Teste",
+   "dtnascto": "1970-03-15"
+  },
+  "dmdev": [
+   {
+    "idedmdev": "MIN202701",
+    "codcateg": 781,
+    "ideestablot": [
+     {
+      "tpinsc": "1",
+      "nrinsc": "11222333000181",
+      "codlotacao": "LOT01",
+      "remunperapur": [
+       {
+        "itensremun": [
+         {
+          "codrubr": "PREBENDA",
+          "idetabrubr": "MERISTES",
+          "vrrubr": 3000.0
+         },
+         {
+          "codrubr": "MORADIA",
+          "idetabrubr": "MERISTES",
+          "vrrubr": 1000.0
+         },
+         {
+          "codrubr": "IRRF",
+          "idetabrubr": "MERISTES",
+          "vrrubr": 120.5
+         },
+         {
+          "codrubr": "INSSMIN",
+          "idetabrubr": "MERISTES",
+          "vrrubr": 324.2
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "infocomplcont": {
+     "codcbo": "263105"
+    }
+   }
+  ]
+ }
+}

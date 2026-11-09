@@ -1,0 +1,34 @@
+{
+ "event": "evtTabRubrica",
+ "xsd": "evtTabRubrica",
+ "config": {
+  "tpAmb": 2,
+  "verProc": "Meristes_1.0",
+  "eventoVersion": "S.1.3.0",
+  "serviceVersion": "1.5.0",
+  "empregador": {
+   "tpInsc": 1,
+   "nrInsc": "11222333"
+  },
+  "transmissor": {
+   "tpInsc": 2,
+   "nrInsc": "12345678909"
+  }
+ },
+ "std": {
+  "modo": "INC",
+  "codrubr": "INSSMIN",
+  "idetabrubr": "MERISTES",
+  "inivalid": "2027-01",
+  "dadosrubrica": {
+   "dscrubr": "INSS recolhido pelo ministro (dedução do IRRF)",
+   "natrubr": 9201,
+   "tprubr": 4,
+   "codinccp": "00",
+   "codincirrf": "41",
+   "codincfgts": "00",
+   "codincpispasep": "00",
+   "observacao": "Contribuição do próprio ministro (IN 2.110 art. 37 §4), deduzida da base do IRRF"
+  }
+ }
+}
