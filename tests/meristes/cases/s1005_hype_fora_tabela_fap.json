@@ -1,0 +1,31 @@
+{
+ "event": "evtTabEstab",
+ "xsd": "evtTabEstab",
+ "motivoCaso": "estabelecimento fora da tabela FAP (ocorrência 1801): fap 1,0000 por definição, Resolução CNPS 1.347/2021",
+ "config": {
+  "tpAmb": 2,
+  "verProc": "Meristes_1.0",
+  "eventoVersion": "S.1.3.0",
+  "serviceVersion": "1.5.0",
+  "empregador": {
+   "tpInsc": 1,
+   "nrInsc": "11222333"
+  },
+  "transmissor": {
+   "tpInsc": 2,
+   "nrInsc": "12345678909"
+  }
+ },
+ "std": {
+  "modo": "INC",
+  "tpinsc": 1,
+  "nrinsc": "11222333000181",
+  "inivalid": "2026-01",
+  "dadosestab": {
+   "cnaeprep": "1412601",
+   "aliqgilrat": {
+    "fap": 1
+   }
+  }
+ }
+}
