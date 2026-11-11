@@ -147,7 +147,10 @@ trait TraitS1005
                 );
                 $aliqGilrat->appendChild($procAdmJudFap);
             }
-            $dadosEstab->appendChild($aliqGilrat);
+            //S-1.3: grupo 0-1; vazio não vai (aliqRat e fap só com processo ou fora da tabela FAP)
+            if ($aliqGilrat->hasChildNodes()) {
+                $dadosEstab->appendChild($aliqGilrat);
+            }
             if (!empty($this->std->dadosestab->infocaepf)) {
                 $infoCaepf = $this->dom->createElement("infoCaepf");
                 $this->dom->addChild(
@@ -382,7 +385,10 @@ trait TraitS1005
                 );
                 $aliqGilrat->appendChild($procAdmJudFap);
             }
-            $dadosEstab->appendChild($aliqGilrat);
+            //S-1.3: grupo 0-1; vazio não vai (aliqRat e fap só com processo ou fora da tabela FAP)
+            if ($aliqGilrat->hasChildNodes()) {
+                $dadosEstab->appendChild($aliqGilrat);
+            }
             if (!empty($this->std->dadosestab->infocaepf)) {
                 $infoCaepf = $this->dom->createElement("infoCaepf");
                 $this->dom->addChild(

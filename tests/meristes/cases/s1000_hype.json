@@ -1,4 +1,5 @@
-{"event":"evtInfoEmpregador","xsd":"evtInfoEmpregador",
+{"event":"evtInfoEmpregador","xsd":"evtInfoEmpregador","desde":"2026-11-23",
+ "motivo":"iniValid >= 2026-02: o leiaute proíbe indOptRegEletron, e o pacote de 26/10/2026 ainda o exige",
  "config":{"tpAmb":2,"verProc":"Meristes_1.0","eventoVersion":"S.1.3.0","serviceVersion":"1.5.0",
    "empregador":{"tpInsc":1,"nrInsc":"11222333"},"transmissor":{"tpInsc":1,"nrInsc":"11222333000181"}},
  "std":{"modo":"INC","ideperiodo":{"inivalid":"2026-03"},

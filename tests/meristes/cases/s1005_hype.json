@@ -1,6 +1,9 @@
 {
  "event": "evtTabEstab",
  "xsd": "evtTabEstab",
+ "naoContem": [
+  "aliqGilrat"
+ ],
  "config": {
   "tpAmb": 2,
   "verProc": "Meristes_1.0",
@@ -21,11 +24,7 @@
   "nrinsc": "11222333000181",
   "inivalid": "2026-03",
   "dadosestab": {
-   "cnaeprep": "1412601",
-   "aliqgilrat": {
-    "aliqrat": 2,
-    "fap": 0.5
-   }
+   "cnaeprep": "1412601"
   }
  }
 }

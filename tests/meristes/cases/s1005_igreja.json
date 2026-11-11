@@ -1,6 +1,9 @@
 {
  "event": "evtTabEstab",
  "xsd": "evtTabEstab",
+ "naoContem": [
+  "aliqGilrat"
+ ],
  "config": {
   "tpAmb": 2,
   "verProc": "Meristes_1.0",

@@ -4,6 +4,9 @@
 // da lib e validado no XSD de schemes/v_S_01_03_00 (Factory::sign). Com um segundo argumento, valida
 // também em cada pacote oficial dessa pasta (uma subpasta por pacote).
 // Uso: php tests/meristes/run_cases.php [dir_pacotes_oficiais]
+// Toda falha conta, em qualquer pacote. A única exceção é declarada no próprio caso: "desde" (data do
+// pacote, AAAA-MM-DD, no nome da subpasta) com "motivo", para o XML que o leiaute só admite a partir
+// daquele pacote. "naoContem" lista trechos que não podem aparecer no XML (grupo vazio, por exemplo).
 require __DIR__ . '/../../bootstrap.php';
 use NFePHP\Common\Certificate;
 use NFePHP\eSocial\Event;
@@ -18,6 +21,11 @@ foreach (glob(__DIR__ . '/cases/*.json') as $file) {
     $nome = basename($file, '.json');
     try {
         $xml = Event::{$case->event}(json_encode($case->config), $case->std, $cert)->toXml();
+        foreach ($case->naoContem ?? [] as $trecho) {
+            if (str_contains($xml, $trecho)) {
+                throw new \RuntimeException("o XML contém \"$trecho\"");
+            }
+        }
         echo "OK    $nome (lib + XSD da lib)\n";
     } catch (\Throwable $e) {
         $falhas++;
@@ -25,6 +33,10 @@ foreach (glob(__DIR__ . '/cases/*.json') as $file) {
         continue;
     }
     foreach (empty($argv[1]) ? [] : glob($argv[1] . '/*', GLOB_ONLYDIR) as $pacote) {
+        if (isset($case->desde) && preg_match('/\d{4}-\d{2}-\d{2}/', basename($pacote), $data) && $data[0] < $case->desde) {
+            echo "N/A   $nome " . basename($pacote) . ": $case->motivo\n";
+            continue;
+        }
         $dom = new DOMDocument();
         $dom->loadXML($xml);
         $ok = $dom->schemaValidate("$pacote/{$case->xsd}.xsd");
