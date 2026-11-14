@@ -1,0 +1,72 @@
+{
+ "event": "evtRemun",
+ "xsd": "evtRemun",
+ "config": {
+  "tpAmb": 2,
+  "verProc": "Meristes_1.0",
+  "eventoVersion": "S.1.3.0",
+  "serviceVersion": "1.5.0",
+  "empregador": {
+   "tpInsc": 1,
+   "nrInsc": "11222333"
+  },
+  "transmissor": {
+   "tpInsc": 2,
+   "nrInsc": "12345678909"
+  }
+ },
+ "std": {
+  "indretif": 1,
+  "indapuracao": 1,
+  "perapur": "2027-01",
+  "cpftrab": "12345678909",
+  "dmdev": [
+   {
+    "idedmdev": "SOC202701",
+    "codcateg": 723,
+    "ideestablot": [
+     {
+      "tpinsc": "1",
+      "nrinsc": "11222333000181",
+      "codlotacao": "LOT01",
+      "remunperapur": [
+       {
+        "itensremun": [
+         {
+          "codrubr": "PROLABORE",
+          "idetabrubr": "MERISTES",
+          "vrrubr": 3000.0
+         },
+         {
+          "codrubr": "INSS",
+          "idetabrubr": "MERISTES",
+          "vrrubr": 330.0
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "infomv": {
+   "indmv": 1,
+   "remunoutrempr": [
+    {
+     "tpinsc": 1,
+     "nrinsc": "11444777000161",
+     "codcateg": 101,
+     "vlrremunoe": 1000.0
+    }
+   ]
+  }
+ },
+ "naoContem": [
+  "<indSimples>"
+ ],
+ "contem": [
+  "<infoMV>",
+  "<indMV>1</indMV>",
+  "<vlrRemunOE>1000</vlrRemunOE>"
+ ]
+}

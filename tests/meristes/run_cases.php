@@ -6,7 +6,8 @@
 // Uso: php tests/meristes/run_cases.php [dir_pacotes_oficiais]
 // Toda falha conta, em qualquer pacote. A única exceção é declarada no próprio caso: "desde" (data do
 // pacote, AAAA-MM-DD, no nome da subpasta) com "motivo", para o XML que o leiaute só admite a partir
-// daquele pacote. "naoContem" lista trechos que não podem aparecer no XML (grupo vazio, por exemplo).
+// daquele pacote. "naoContem" lista trechos que não podem aparecer no XML (grupo vazio, por exemplo);
+// "contem", os que têm de aparecer (o grupo que o caso existe para provar).
 require __DIR__ . '/../../bootstrap.php';
 use NFePHP\Common\Certificate;
 use NFePHP\eSocial\Event;
@@ -21,6 +22,11 @@ foreach (glob(__DIR__ . '/cases/*.json') as $file) {
     $nome = basename($file, '.json');
     try {
         $xml = Event::{$case->event}(json_encode($case->config), $case->std, $cert)->toXml();
+        foreach ($case->contem ?? [] as $trecho) {
+            if (!str_contains($xml, $trecho)) {
+                throw new \RuntimeException("o XML não contém \"$trecho\"");
+            }
+        }
         foreach ($case->naoContem ?? [] as $trecho) {
             if (str_contains($xml, $trecho)) {
                 throw new \RuntimeException("o XML contém \"$trecho\"");
