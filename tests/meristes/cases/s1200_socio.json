@@ -31,7 +31,6 @@
       "codlotacao": "LOT01",
       "remunperapur": [
        {
-        "indsimples": 1,
         "itensremun": [
          {
           "codrubr": "PROLABORE",
@@ -55,5 +54,8 @@
     ]
    }
   ]
- }
+ },
+ "naoContem": [
+  "<indSimples>"
+ ]
 }

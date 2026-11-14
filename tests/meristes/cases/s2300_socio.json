@@ -48,7 +48,16 @@
    }
   ],
   "cadini": "N",
+  "matricula": "PROLABORE-01",
   "codcateg": "723",
-  "dtinicio": "2027-01-01"
+  "dtinicio": "2027-01-01",
+  "cargofuncao": {
+   "nmcargo": "Sócio administrador",
+   "cbocargo": "121010"
+  },
+  "localtrabgeral": {
+   "tpinsc": 1,
+   "nrinsc": "11222333000181"
+  }
  }
 }

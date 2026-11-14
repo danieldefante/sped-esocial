@@ -329,7 +329,7 @@
             "minimum": 1,
             "maximum": 2
         },
-        "cargoduncao": {
+        "cargofuncao": {
             "required": false,
             "type": ["object","null"],
             "properties": {
@@ -340,8 +340,8 @@
                     "maxLength": 100
                 },
                 "cbocargo": {
-                    "required": true,
-                    "type": "string",
+                    "required": false,
+                    "type": ["string","null"],
                     "pattern": "^[0-9]{6}$"
                 },
                 "nmfuncao": {
@@ -351,8 +351,8 @@
                     "maxLength": 100
                 },
                 "cbofuncao": {
-                    "required": true,
-                    "type": "string",
+                    "required": false,
+                    "type": ["string","null"],
                     "pattern": "^[0-9]{6}$"
                 }
             }
