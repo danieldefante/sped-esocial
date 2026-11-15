@@ -39,22 +39,26 @@
          {
           "codrubr": "PREBENDA",
           "idetabrubr": "MERISTES",
-          "vrrubr": 3000.0
+          "vrrubr": 3000.0,
+          "indapurir": 0
          },
          {
           "codrubr": "MORADIA",
           "idetabrubr": "MERISTES",
-          "vrrubr": 1000.0
+          "vrrubr": 1000.0,
+          "indapurir": 0
          },
          {
           "codrubr": "IRRF",
           "idetabrubr": "MERISTES",
-          "vrrubr": 120.5
+          "vrrubr": 120.5,
+          "indapurir": 0
          },
          {
           "codrubr": "INSSMIN",
           "idetabrubr": "MERISTES",
-          "vrrubr": 324.2
+          "vrrubr": 324.2,
+          "indapurir": 0
          }
         ]
        }
@@ -66,5 +70,8 @@
     }
    }
   ]
- }
+ },
+ "contem": [
+  "<indApurIR>0</indApurIR>"
+ ]
 }

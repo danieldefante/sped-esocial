@@ -23,7 +23,11 @@
    "evtpgtos": "S",
    "evtcontratavnp": "N",
    "evtinfocomplper": "N",
-   "evtcomprod": "N"
+   "evtcomprod": "N",
+   "naovalid": "N"
   }
- }
+ },
+ "contem": [
+  "<naoValid>N</naoValid>"
+ ]
 }

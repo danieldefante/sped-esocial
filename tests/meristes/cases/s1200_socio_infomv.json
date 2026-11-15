@@ -35,14 +35,17 @@
          {
           "codrubr": "PROLABORE",
           "idetabrubr": "MERISTES",
-          "vrrubr": 3000.0
+          "vrrubr": 3000.0,
+          "indapurir": 0
          },
          {
           "codrubr": "INSS",
           "idetabrubr": "MERISTES",
-          "vrrubr": 330.0
+          "vrrubr": 330.0,
+          "indapurir": 0
          }
-        ]
+        ],
+        "matricula": "SOCIO-01"
        }
       ]
      }
@@ -67,6 +70,8 @@
  "contem": [
   "<infoMV>",
   "<indMV>1</indMV>",
-  "<vlrRemunOE>1000</vlrRemunOE>"
+  "<vlrRemunOE>1000</vlrRemunOE>",
+  "<indApurIR>0</indApurIR>",
+  "<matricula>SOCIO-01</matricula>"
  ]
 }

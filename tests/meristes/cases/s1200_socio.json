@@ -35,19 +35,23 @@
          {
           "codrubr": "PROLABORE",
           "idetabrubr": "MERISTES",
-          "vrrubr": 5000.0
+          "vrrubr": 5000.0,
+          "indapurir": 0
          },
          {
           "codrubr": "INSS",
           "idetabrubr": "MERISTES",
-          "vrrubr": 550.0
+          "vrrubr": 550.0,
+          "indapurir": 0
          },
          {
           "codrubr": "IRRF",
           "idetabrubr": "MERISTES",
-          "vrrubr": 80.0
+          "vrrubr": 80.0,
+          "indapurir": 0
          }
-        ]
+        ],
+        "matricula": "SOCIO-01"
        }
       ]
      }
@@ -57,5 +61,9 @@
  },
  "naoContem": [
   "<indSimples>"
+ ],
+ "contem": [
+  "<indApurIR>0</indApurIR>",
+  "<matricula>SOCIO-01</matricula>"
  ]
 }
